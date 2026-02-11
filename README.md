@@ -27,7 +27,7 @@ Before running the application, ensure you have the following installed:
 
 ### 1. Clone the Project
 ```bash
-git clone [https://github.com/bray-hiramis/your-repo-name.git](https://github.com/bray-hiramis/your-repo-name.git)
+git clone [https://github.com/bray-hiramis/simple-logic-gates.git](https://github.com/bray-hiramis/simple-logic-gates.git)
 ```
 
 ### 2. Configure the IDE (Eclipse Example)
