@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="532.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/AND.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/OR.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="183.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/NOT.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgAndLight" fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/LightsOFF.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgOrLight" fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/LightsOFF.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgNotLight" fitHeight="150.0" fitWidth="200.0" layoutX="360.0" layoutY="511.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/lightsON.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="andSwitch1" layoutX="31.0" layoutY="130.0" mnemonicParsing="false" onAction="#andGate" prefHeight="29.0" prefWidth="107.0" text="Switch">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="andSwitch2" layoutX="31.0" layoutY="186.0" mnemonicParsing="false" onAction="#andGate" prefHeight="29.0" prefWidth="107.0" text="Switch">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="orSwitch1" layoutX="31.0" layoutY="335.0" mnemonicParsing="false" onAction="#orGate" prefHeight="29.0" prefWidth="107.0" text="Switch">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="orSwitch2" layoutX="31.0" layoutY="391.0" mnemonicParsing="false" onAction="#orGate" prefHeight="29.0" prefWidth="107.0" text="Switch">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="notSwitch" layoutX="31.0" layoutY="572.0" mnemonicParsing="false" onAction="#notGate" prefHeight="29.0" prefWidth="107.0" text="Switch">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </CheckBox>
+      <Label alignment="CENTER" layoutX="201.0" layoutY="100.0" prefHeight="29.0" prefWidth="114.0" text="AND GATE">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="201.0" layoutY="306.0" prefHeight="29.0" prefWidth="114.0" text="OR GATE">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="201.0" layoutY="512.0" prefHeight="29.0" prefWidth="114.0" text="NOT GATE">
+         <font>
+            <Font name="Roboto Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="92.0" layoutY="14.0" prefHeight="59.0" prefWidth="332.0" text="Simple Logic Gates">
+         <font>
+            <Font name="Roboto Regular" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
